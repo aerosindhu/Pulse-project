@@ -279,6 +279,11 @@ button {
   font-size: var(--t-s);
   font-weight: 500;
   white-space: nowrap;
+  text-align: right;
+  /* Stated at the number itself, not left to inherit: the figures here are the
+     one place in the list where a column of them has to line up. */
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
 }
 
 .delta small {

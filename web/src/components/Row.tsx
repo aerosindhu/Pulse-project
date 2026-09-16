@@ -88,7 +88,7 @@ export function Row({ row, now, onRead, onRemove }: Props) {
         )}
         {!unread && row.price !== null && (
           <span className="chip">
-            {rupees(row.price)} · {pct(row.dayChangePct)} today
+            {rupees(row.price)} · <span className={tone(row.dayChangePct)}>{pct(row.dayChangePct)}</span> today
           </span>
         )}
         <span className="spacer" />
